@@ -498,10 +498,15 @@ form button {
     display: none;
   }
   .contact {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .lottie-skills dotlottie-player ,.lottie-contact dotlottie-player{
+  width: 100%;
+  height: 100%;
+  /* display: none; */
+}
+.lottie-contact, .lottie-skills {
   width: 300px;
   height: 300px;
 }
