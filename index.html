@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "3fxZD-7e-TnHJQE_U",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="images/logos__5_-removebg-preview.png" alt="">
+        </div>
+
+        <ul id="menuList">
+
+            <a href="" id="services-link" class="nav-li">
+                <li>Services</li>
+            </a>
+            <a href="" id="projects-link" class="nav-li">
+                <li>Projects</li>
+            </a>
+            <a href="" id="skills-link" class="nav-li">
+                <li>Skills</li>
+            </a>
+            <a href="" id="contact-link" class="nav-li">
+                <li>Contact</li>
+            </a>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+
+    </div>
+    <div class="landing">
+        <div class="landing-text" data-aos="fade-right" data-aos-duration="2000">
+            <h1 class="header-title">Turning <span>Ideas</span> into Digital Reality</h1>
+            <p>
+                Hi, I'm Mohammed Morouche, a Computer Science student at Angers University and a passionate web
+                developer. I
+                specialize in creating stunning, functional websites that bring your ideas to life and help your brand
+                shine online. Let’s build something great together.
+            </p>
+
+        </div>
+        <div class="lottie-landing">
+            <dotlottie-player src="https://lottie.host/0f45aee9-2b3d-4d72-8d9a-6d27788ed53d/ShCMq95trS.json"
+                background="transparent" speed="1" style="width: 425px; height: 425px;" autoplay></dotlottie-player>
+        </div>
+
+
+    </div>
+    <div class="services" id="services">
+        <h1 class="h1" data-aos="fade-up" data-aos-duration="1000">Services</h1>
+        <div class="services-container">
+            <div class="serv-1" data-aos="flip-left" data-aos-duration="1000">
+                <img src="images/services/global-market.png" alt="">
+                <h2 class="h2">Online store</h2>
+                <p>Create fully functional e-commerce websites with secure payment gateways, inventory management, and a
+                    user-friendly interface for seamless shopping experiences.</p>
+            </div>
+            <div class="serv-2" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+                <img src="images/services/computer.png" alt="">
+                <h2 class="h2">Showcase website</h2>
+                <p>Design visually appealing websites to highlight your brand, services, or products with responsive
+                    design and sleek layouts, perfect for businesses or portfolios.</p>
+            </div>
+            <div class="serv-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="800">
+                <img src="images/services/website-codes.png" alt="">
+                <h2 class="h2">Customized site</h2>
+                <p>Develop bespoke websites tailored to your specific needs and vision, with unique features and
+                    functionalities that fit your business goals.</p>
+            </div>
+            <div class="serv-4" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1200">
+                <img src="images/services/web-services.png" alt="">
+                <h2 class="h2">Technical support</h2>
+                <p>Provide ongoing technical assistance to ensure your website runs smoothly, from troubleshooting
+                    issues to updating and maintaining site security.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="projects" id="projects">
+
+        <h1 class="h1" data-aos="fade-up" data-aos-duration="1000">Projects</h1>
+        <div class="projects-container">
+
+            <div class="project-1" data-aos="zoom-in" data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <img src="images/projects/black-back.png" alt="">
+                <h2 class="h2">Rosnan Collection</h2>
+                <p>An online store offering a stylish and curated selection of women's clothing. It provides a smooth
+                    shopping experience with trendy outfits and easy checkout options.</p>
+                <a href="https://rosnancollection.great-site.net/?i=1" target="_blank" class="button">Live preview</a>
+            </div>
+            <div class="project-2" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"
+                data-aos-anchor-placement="center-bottom">
+                <img src="images/projects/ComHub_prev_ui.png" alt="">
+                <h2 class="h2">ComHub</h2>
+                <p>An e-commerce store for computers, components, peripherals, and accessories. It offers a seamless
+                    shopping experience with a wide range of tech products.</p>
+                <a href="https://comhub-62c9c.web.app" target="_blank" class="button">Live preview</a>
+            </div>
+            <div class="project-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600"
+                data-aos-anchor-placement="center-bottom">
+                <img src="images/projects/Logo.png" alt="">
+                <h2 class="h2">ZenNest Living</h2>
+                <p>An e-commerce store focused on interior decor, offering a wide selection of furniture, decor items,
+                    and accessories designed to elevate any space with modern elegance and comfort.</p>
+                <a href="https://www.zennest.great-site.net/" target="_blank" class="button">Live preview</a>
+            </div>
+            <div class="project-4" data-aos="zoom-in" data-aos-duration="1000"
+                data-aos-anchor-placement="center-bottom">
+                <img src="images/projects/logowithhotel.png" alt="">
+                <h2 class="h2">Vite Hotel</h2>
+                <p>A hotel booking website designed for Vite Hotel, offering an intuitive platform for guests to check
+                    room availability, explore amenities, and make reservations effortlessly. It provides a seamless
+                    booking experience with detailed room information.</p>
+                <a href="https://vitehotel.web.app/" target="_blank" class="button">Live preview</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="skills" id="skills">
+        <h1 class="h1" data-aos="fade-up" data-aos-duration="1000">Skills</h1>
+        <div class="skills-child">
+            <div class="lottie-skills" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-anchor-placement="bottom-bottom">
+                <dotlottie-player src="https://lottie.host/d0ec336c-79c8-4055-add7-9a1c8985ff89/mzGEJQx5Ny.json"
+                    background="transparent" speed="1" style="width: 350px; height: 350px;" loop
+                    autoplay></dotlottie-player>
+            </div>
+
+            <div class="skills-container" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-anchor-placement="bottom-bottom">
+                <div class="skill-item">
+                    <h3>HTML, CSS</h3>
+                    <div class="skill-percentage">0%</div>
+                    <div class="progress">
+                        <span style="width: 0" data-width="90%"></span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Javascript</h3>
+                    <div class="skill-percentage">0%</div>
+                    <div class="progress">
+                        <span style="width: 0" data-width="85%"></span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>C, JAVA</h3>
+                    <div class="skill-percentage">0%</div>
+                    <div class="progress">
+                        <span style="width: 0" data-width="75%"></span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>WordPress, WooCommerce, Elementor</h3>
+                    <div class="skill-percentage">0%</div>
+                    <div class="progress">
+                        <span style="width: 0" data-width="90%"></span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>React</h3>
+                    <div class="skill-percentage">0%</div>
+                    <div class="progress">
+                        <span style="width: 0" data-width="75%"></span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Firebase</h3>
+                    <div class="skill-percentage">0%</div>
+                    <div class="progress">
+                        <span style="width: 0" data-width="70%"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact" id="contact">
+        <h1 class="h1" data-aos="fade-up" data-aos-duration="1000">Contact</h1>
+        <div class="contact-container" data-aos="fade-up-right" data-aos-duration="1500">
+            <div class="contact-form">
+                <h2 class="h2">Get in touch</h2>
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="86710893-eec3-49b1-bd11-5ae6433713f0">
+                    <div class="inputs">
+                        <input class="contact-inputs" id="username" name="username" type="text"
+                            placeholder="Username (instagram,...)" autocomplete="off">
+                        <input class="contact-inputs" id="country" name="country" type="text" placeholder="Country"
+                            autocomplete="off">
+                        <input class="contact-inputs" id="telephone" name="phone" type="tel" placeholder="Phone"
+                            autocomplete="off">
+                        <input class="contact-inputs" id="email" name="email" type="email" placeholder="Email" required
+                            autocomplete="off">
+                    </div>
+
+
+
+                    <textarea class="contact-inputs" id="message" name="message" placeholder="Message"
+                        required></textarea>
+                    <button class="button" type="submit">Send</button>
+                </form>
+            </div>
+            <div class="lottie-contact" data-aos="fade-up-left" data-aos-duration="1500">
+                <dotlottie-player src="https://lottie.host/ef2e0e50-c2bb-40ac-9e9f-e21ed32840d9/TAWABfLJgI.json"
+                    background="transparent" speed="1" style="width: 350px; height: 350px;" loop
+                    autoplay></dotlottie-player>
+            </div>
+        </div>
+    </div>
+    <div class="footer_glo">
+        <div class="footer">
+            <div class="page">
+                <h2>Sections</h2>
+                <ul>
+                    <li><a class="nav-link active" id="footer-services-link">Services</a></li>
+                    <li><a class="nav-link " id="footer-projects-link">Projects</a></li>
+                    <li><a class="nav-link" id="footer-skills-link">Skills</a></li>
+                    <li><a class="nav-link " id="footer-contact-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="categories">
+                <h2>Social</h2>
+                <ul>
+                    <li>
+                        <i class="fa-brands fa-instagram"></i>
+                        <a class="nav-link " href="https://www.instagram.com/momo__dev" target="_blank" >Instagram</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <a class="nav-link " href="https://www.linkedin.com/in/mohammed-morouche" target="_blank">LinkedIn</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-github"></i>
+                        <a class="nav-link " href="https://github.com/MohammedMorouche" target="_blank">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacte">
+                <h2>Contact</h2>
+                <ul>
+                    <li><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot"
+                            class="svg-inline--fa fa-location-dot piw" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 384 512">
+                            <path fill="currentColor"
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z">
+                            </path>
+                        </svg>
+                        <p>Angers, France</p>
+                    </li>
+                    <li><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone"
+                            class="svg-inline--fa fa-phone piw" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z">
+                            </path>
+                        </svg>
+                        <p>+33 758000090</p>
+                    </li>
+                    <li><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope"
+                            class="svg-inline--fa fa-envelope piw" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z">
+                            </path>
+                        </svg>
+                        <p>mohammed.morouche0@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_copy">Created By <strong>Mohammed Morouche</strong> | &copy; 2024 All rights reserved.</div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    </script>
+</body>
+
+</html>
