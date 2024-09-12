@@ -477,7 +477,15 @@ form button {
     padding: 0;
   }
   .contact-form div input{
+    width: 80%;
+  }
+  .contact-form  textarea{
+    width: 80%;
+  }
+  .contact-form .button {
     width: 90%;
+    text-align: center;
+    margin: 1 auto;
   }
   .projects{
     padding-left: 30px;
