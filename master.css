@@ -465,20 +465,24 @@ form button {
     padding-right: 10px;
   }
   .footer div h2 {
-    font-size: 45px;
+    font-size: 35px;
 }
 .footer .page ul ,.footer .categories ul {
-  font-size: 30px;
+  font-size: 20px;
+}
+.lottie-skills, .lottie-contact {
+  display: none;
 }
 .footer .categories i {
-  font-size: 30px;
+  font-size: 20px;
   padding-top: 10px;
   padding-right: 10px;
-  height: 80px;
+  height: 30px;
 }
 .footer .categories li {
   height: min-content;
 }
+
   .footer div {
     padding: 10px;
     align-items: start;
@@ -493,15 +497,24 @@ form button {
     padding: 0;
   }
   .contact-form div input{
+    width: 100%;
+  }
+ .contact-container{
+    padding-left: 30px;
+ }
+  .skills-container {
+    padding-right: 20px;
+  }
+  .contact-form{
     width: 80%;
   }
-  .contact-form  textarea{
-    width: 80%;
-  }
-  .contact-form .button {
+  /* .contact-form .button {
     width: 90%;
     text-align: center;
     margin: 1 auto;
+  } */
+  .skills-container {
+    width: 80%;
   }
   .projects{
     padding-left: 30px;
