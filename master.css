@@ -56,7 +56,8 @@ body {
   /* background-color: var(--primary-color); */
   /* background: linear-gradient(135deg, #0c042e, #3a2a6d); */
   color: white;
-  background: linear-gradient(120deg, #0c042e, #1a064a);
+  /* background: linear-gradient(120deg, #0c042e, #1a064a); */
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 .landing div {
   width: 50%;
@@ -463,6 +464,21 @@ form button {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .footer div h2 {
+    font-size: 45px;
+}
+.footer .page ul ,.footer .categories ul {
+  font-size: 30px;
+}
+.footer .categories i {
+  font-size: 30px;
+  padding-top: 10px;
+  padding-right: 10px;
+  height: 80px;
+}
+.footer .categories li {
+  height: min-content;
+}
   .footer div {
     padding: 10px;
     align-items: start;
