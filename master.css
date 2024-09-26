@@ -57,7 +57,7 @@ body {
   /* background: linear-gradient(135deg, #0c042e, #3a2a6d); */
   color: white;
   /* background: linear-gradient(120deg, #0c042e, #1a064a); */
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-image: linear-gradient(to right, #000000 0%, #1a1a1a 75%, #2e2e2e 100%);
 }
 .landing div {
   width: 50%;
@@ -252,7 +252,8 @@ body {
 form input,
 form textarea {
   border: 1px solid white;
-  background-color: #0c042e;
+  /* background-color: #0c042e; */
+  background: linear-gradient(to right, #000000 0%, #1a1a1a 75%, #2e2e2e 100%);
   outline: none;
   border-radius: 20px;
   padding: 20px;
