@@ -113,8 +113,8 @@ body {
 .projects,
 .skills,
 .contact {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
   margin-bottom: 50px;
 }
 
@@ -137,6 +137,7 @@ body {
 
 .services-container p {
   text-align: center;
+  font-size: 15px;
 }
 .h2 {
   padding-top: 20px;
@@ -151,7 +152,7 @@ body {
   padding: 20px;
 }
 .projects img {
-  width: 200px;
+  width: 150px;
   /* height: 100px; */
   border-radius: 50%;
 }
@@ -161,7 +162,7 @@ body {
   border-radius: 5%;
 }
 .projects-container > div {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .projects-container>div:hover img {
@@ -178,6 +179,7 @@ body {
 }
 .projects-container > div p {
   margin-bottom: 30px;
+  font-size: 15px;
 }
 .skills-child {
   display: grid;
@@ -466,7 +468,7 @@ form button {
     padding-right: 10px;
   }
   .footer div h2 {
-    font-size: 35px;
+    font-size: 30px;
 }
 .footer .page ul ,.footer .categories ul {
   font-size: 20px;
@@ -517,7 +519,7 @@ form button {
   .skills-container {
     width: 80%;
   }
-  .projects{
+  .projects ,.services{
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -594,3 +596,25 @@ form button {
       transition: all 0.5s;
   }
 }
+
+
+.skills-project li{
+  background-color: gray;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin:5px;
+  font-size: 15px;
+}
+.skills-project{
+  margin-bottom: 20px;
+  display: flex;
+  /* padding-left: 5px; */
+  /* margin-right: 5px; */
+  align-items: center;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+/* .skills-project span:nth-child(3){
+  margin-top: 10px;
+} */
