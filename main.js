@@ -63,6 +63,10 @@ window.addEventListener('scroll', function() {
     event.preventDefault();
     scrollToSection("contact");
   });
+  document.getElementById("contact-button").addEventListener("click", function(event) {
+    event.preventDefault();
+    scrollToSection("contact");
+  });
 
   // Footer navigation
   document.getElementById("footer-services-link").addEventListener("click", function(event) {

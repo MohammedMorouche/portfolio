@@ -92,6 +92,27 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+#contact-button {
+  width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: all 0.3s ease; 
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#contact-button:hover {
+  background: black;
+  color: white;
+  border: 1px solid white;
+}
+
 .header-title {
   font-size: 50px;
   line-height: 1.2;
