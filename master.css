@@ -616,6 +616,9 @@ form button {
   #menuList{
       transition: all 0.5s;
   }
+  .header-title {
+    font-size: 35px;
+  }
 }
 
 
