@@ -48,6 +48,14 @@ window.addEventListener('scroll', function() {
     event.preventDefault();
     scrollToSection("services");
   });
+  document.getElementById("button-landing1").addEventListener("click", function(event) {
+    event.preventDefault();
+    scrollToSection("projects");
+  });
+  document.getElementById("button-landing2").addEventListener("click", function(event) {
+    event.preventDefault();
+    scrollToSection("contact");
+  });
 
   document.getElementById("projects-link").addEventListener("click", function(event) {
     event.preventDefault();

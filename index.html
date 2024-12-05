@@ -31,6 +31,40 @@
 </head>
 
 <body>
+    <!-- <div class="neon-circle"></div> -->
+
+    <style>
+        .header {
+            overflow: hidden;
+        }
+
+        .header::before ,.landing::before {
+            content: "";
+            position: absolute;
+            width: 322px;
+            height: 308px;
+            border-radius: 50%;
+            filter: blur(150px);
+            z-index: -1;
+            background: linear-gradient(260deg, rgba(255, 0, 0, 1) 20%, rgba(255, 0, 0, 0.3) 80%);
+        }
+        .landing {
+            overflow: hidden;
+        }
+        .header::before {
+            top: 0;
+            margin-right: -5%;
+            margin-top: -5%;
+            right: 0;
+        }
+        .landing::before {
+            bottom: 0;
+            left: -120px;
+            margin-right: -5%;
+            margin-top: -5%;
+        }
+    </style>
+
     <div class="header">
         <div class="logo">
             <img src="images/logos__5_-removebg-preview.png" alt="logo">
@@ -58,21 +92,24 @@
     </div>
     <div class="landing">
         <div class="landing-text" data-aos="fade-right" data-aos-duration="2000">
-            <h1 class="header-title">Turning <span>Ideas</span> into Digital Reality</h1>
+            <h1 class="header-title">Je suis momo<br> <span>Développeur web</span></h1>
             <p>
-                Hi, I'm Mohammed Morouche, a Computer Science student at Angers University and a passionate web
-                developer. I
-                specialize in creating stunning, functional websites that bring your ideas to life and help your brand
-                shine online. Let’s build something great together.
+                Bonjour, je suis Mohammed Morouche, étudiant en informatique à l'Université d'Angers et passionné par le
+                développement web. Je me spécialise dans la création de sites web magnifiques et fonctionnels qui
+                donnent vie à vos idées et aident votre marque à briller en ligne. Créons quelque chose de grand
+                ensemble.
             </p>
-            
-                <button id="contact-button">Contact me Now !</button>
-            
+            <div class="button-lan-button">
+                <button id="button-landing1">Voir mes réalisation</button>
+                <button id="button-landing2">Contactez-moi</button>
+              
+            </div>
+
 
         </div>
         <div class="lottie-landing">
             <dotlottie-player src="https://lottie.host/0f45aee9-2b3d-4d72-8d9a-6d27788ed53d/ShCMq95trS.json"
-                background="transparent" speed="1" style="width: 425px; height: 425px;" autoplay></dotlottie-player>
+                background="transparent" speed="1" style="width: 500px; height: 500px;" autoplay></dotlottie-player>
         </div>
 
 
@@ -81,29 +118,31 @@
         <h1 class="h1" data-aos="fade-up" data-aos-duration="1000">Services</h1>
         <div class="services-container">
             <div class="serv-1" data-aos="flip-left" data-aos-duration="1000">
-                <img src="images/services/global-market.png" alt="Online store">
-                <h2 class="h2">Online store</h2>
-                <p>Create fully functional e-commerce websites with secure payment gateways, inventory management, and a
-                    user-friendly interface for seamless shopping experiences.</p>
+                <img src="images/services/store100.png" alt="Online store">
+                <h2 class="h2">Boutique en ligne</h2>
+<p>Crée des sites e-commerce entièrement fonctionnels avec des passerelles de paiement sécurisées, une gestion des stocks et une interface conviviale pour une expérience d'achat fluide.</p>
+
             </div>
             <div class="serv-2" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
-                <img src="images/services/computer.png" alt="Showcase website">
-                <h2 class="h2">Showcase website</h2>
-                <p>Design visually appealing websites to highlight your brand, services, or products with responsive
-                    design and sleek layouts, perfect for businesses or portfolios.</p>
+                <img src="images/services/show100.png" alt="Site vitrine">
+                <h2 class="h2">Site vitrine</h2>
+                <p>Conçois des sites web esthétiques pour mettre en valeur ta marque, tes services ou tes produits avec un design
+                    responsive et des mises en page élégantes, parfaits pour les entreprises ou les portfolios.</p>
             </div>
+            
             <div class="serv-4" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="800">
-                <img src="images/services/web-services.png" alt="Technical support SEO">
-                <h2 class="h2">Site Care & SEO Boost</h2>
-                <p>Ensure peak website performance with tailored SEO and maintenance, boosting speed and search rankings
-                    for a seamless digital experience.</p>
+                <img src="images/services/mainte-100-2-.png" alt="Support technique et SEO">
+                <h2 class="h2">Entretien du site & Boost SEO</h2>
+                <p>Assure des performances optimales pour ton site web avec un SEO adapté et une maintenance régulière, améliorant
+                    la vitesse et le classement dans les moteurs de recherche pour une expérience digitale fluide.</p>
             </div>
             <div class="serv-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1200">
-                <img src="images/services/website-codes.png" alt="Customized site">
-                <h2 class="h2">Customized site</h2>
-                <p>Develop bespoke websites tailored to your specific needs and vision, with unique features and
-                    functionalities that fit your business goals.</p>
+                <img src="images/services/icons8-code-100.png" alt="Site personnalisé">
+                <h2 class="h2">Site personnalisé</h2>
+                <p>Développe des sites web sur mesure adaptés à tes besoins spécifiques et à ta vision, avec des fonctionnalités
+                    uniques répondant aux objectifs de ton entreprise.</p>
             </div>
+            
 
 
         </div>
@@ -111,78 +150,77 @@
 
     <div class="projects" id="projects">
 
-        <h1 class="h1" data-aos="fade-up" data-aos-duration="1000">Projects</h1>
+        <h1 class="h1" data-aos="fade-up" data-aos-duration="1000">Projets</h1>
         <div class="projects-container">
-
+    
             <div class="project-5" data-aos="fade-up" data-aos-duration="1000"
                 data-aos-anchor-placement="center-bottom">
                 <img src="images/projects/Yalla E-Com Presentation-5-1.png" alt="Rosnan collection">
                 <h2 class="h2">Yalla-Ecom</h2>
-                <p>Yalla Ecom is your go-to for launching and growing online businesses, from LLC/LTD registration to
-                    Shopify store creation. We make your journey seamless!</p>
+                <p>Yalla Ecom est votre solution idéale pour lancer des entreprises en ligne. De l'enregistrement LLC/LTD à
+                    la création de boutiques Shopify, nous simplifions chaque étape de votre parcours.</p>
                 <ul class="skills-project">
                     <li>WordPress</li>
                     <li>Elementor</li>
                     <li>WooCommerce</li>
                 </ul>
-                <a href="https://yalla-ecom.com" target="_blank" class="button">Live preview</a>
+                <a href="https://yalla-ecom.com" target="_blank" class="button">Aperçu en direct</a>
             </div>
             <div class="project-1" data-aos="fade-up" data-aos-duration="1000"
                 data-aos-anchor-placement="center-bottom">
                 <img src="images/projects/black-back.png" alt="Rosnan collection">
                 <h2 class="h2">Rosnan Collection</h2>
-                <p>An online store offering a stylish and curated selection of women's clothing. It provides a smooth
-                    shopping experience with trendy outfits and easy checkout options.</p>
+                <p>Une boutique en ligne qui propose une gamme élégante de vêtements pour femmes. Elle offre une expérience
+                    d'achat fluide avec des articles tendance et des options de paiement simplifiées.</p>
                 <ul class="skills-project">
                     <li>React</li>
                     <li>Firebase</li>
                 </ul>
-                <a href="https://rosnancollection.great-site.net/?i=1" target="_blank" class="button">Live preview</a>
+                <a href="https://rosnancollection.great-site.net/?i=1" target="_blank" class="button">Aperçu en direct</a>
             </div>
             <div class="project-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
                 data-aos-anchor-placement="center-bottom">
                 <img src="images/projects/ComHub_prev_ui.png" alt="ComHub">
                 <h2 class="h2">ComHub</h2>
-                <p>An e-commerce store for computers, components, peripherals, and accessories. It offers a seamless
-                    shopping experience with a wide range of tech products.</p>
+                <p>Une boutique en ligne dédiée aux ordinateurs, accessoires et composants. Elle propose une navigation
+                    fluide avec une large gamme de produits technologiques adaptés à tous les besoins.</p>
                 <ul class="skills-project">
                     <li>React</li>
                     <li>Firebase</li>
                 </ul>
-                <a href="https://comhub-62c9c.web.app" target="_blank" class="button">Live preview</a>
+                <a href="https://comhub-62c9c.web.app" target="_blank" class="button">Aperçu en direct</a>
             </div>
             <div class="project-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"
                 data-aos-anchor-placement="center-bottom">
                 <img src="images/projects/Logo.png" alt="ZenNest Living">
                 <h2 class="h2">ZenNest Living</h2>
-                <p>An e-commerce store focused on interior decor, offering a wide selection of furniture, decor items,
-                    and accessories designed to elevate any space with modern elegance and comfort.</p>
+                <p>Une boutique en ligne dédiée à la décoration d'intérieur, proposant des meubles modernes, des articles de
+                    décoration élégants et des accessoires pour sublimer vos espaces avec style et confort.</p>
                 <ul class="skills-project">
                     <li>WordPress</li>
                     <li>WooCommerce</li>
                     <li>Elementor</li>
                 </ul>
-                <a href="https://www.zennest.great-site.net/" target="_blank" class="button">Live preview</a>
+                <a href="https://www.zennest.great-site.net/" target="_blank" class="button">Aperçu en direct</a>
             </div>
             <div class="project-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900"
                 data-aos-anchor-placement="center-bottom">
                 <img src="images/projects/logowithhotel.png" alt="vitehotel">
                 <h2 class="h2">Vite Hotel</h2>
-                <!-- <p>A hotel booking website designed for Vite Hotel, offering an intuitive platform for guests to check
-                    room availability, explore amenities, and make reservations effortlessly. It provides a seamless
-                    booking experience with detailed room information.</p> -->
-                <p>Vite Hotel's booking site offers an intuitive platform for guests to check availability, explore
-                    amenities, and make reservations easily.</p>
+                <p>Le site de réservation de Vite Hotel propose une plateforme intuitive. Vérifiez la disponibilité, explorez
+                    les services et réservez votre séjour en toute simplicité.</p>
                 <ul class="skills-project">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>Javascript</li>
                     <li>Firebase</li>
                 </ul>
-                <a href="https://vitehotel.web.app/" target="_blank" class="button">Live preview</a>
+                <a href="https://vitehotel.web.app/" target="_blank" class="button">Aperçu en direct</a>
             </div>
-
+    
         </div>
+    </div>
+    
     </div>
     <div class="skills" id="skills">
         <h1 class="h1" data-aos="fade-up" data-aos-duration="1000">Skills</h1>
@@ -190,7 +228,7 @@
             <div class="lottie-skills" data-aos="fade-up" data-aos-duration="1000"
                 data-aos-anchor-placement="bottom-bottom">
                 <dotlottie-player src="https://lottie.host/d0ec336c-79c8-4055-add7-9a1c8985ff89/mzGEJQx5Ny.json"
-                    background="transparent" speed="1" style="width: 350px; height: 350px;" loop
+                    background="transparent" speed="1" style="width: 400px; height: 400px;" loop
                     autoplay></dotlottie-player>
             </div>
 

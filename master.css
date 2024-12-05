@@ -22,9 +22,10 @@ a {
   /* background-color: white; */
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
   /* box-shadow: rgba(255, 255, 255, 1) 0px 5px 15px; */
-  box-shadow: rgba(255, 255, 255, 0.3) 0px 3px 8px;
+  /* box-shadow: rgba(255, 255, 255, 0.3) 0px 3px 8px; */
   padding-left: 30px;
   padding-right: 30px;
+  padding-top: 30px;
   color: white;
   height: 80px;
   display: flex;
@@ -41,6 +42,9 @@ a {
   padding-right: 90px;
   justify-content: space-around;
 }
+.header ul li {
+  font-size: 18px;
+}
 .header .logo {
   align-items: center;
   display: flex;
@@ -56,10 +60,12 @@ body {
   /* background-color: var(--primary-color); */
   /* background: linear-gradient(135deg, #0c042e, #3a2a6d); */
   color: white;
+  background-color: black;
+ overflow-x: hidden;
   /* background: linear-gradient(120deg, #0c042e, #1a064a); */
-  background-image: linear-gradient(to right, #000000 0%, #1a1a1a 75%, #2e2e2e 100%);
+  /* background-image: linear-gradient(to right, #000000 0%, #1a1a1a 75%, #2e2e2e 100%); */
 }
-.landing div {
+.landing>div {
   width: 50%;
 }
 .lottie-landing {
@@ -88,27 +94,57 @@ body {
   padding-right: 50px;
 }
 .landing-text span {
-  background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  background: linear-gradient(to top, #ff0000 0%, #800000 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#contact-button {
-  width: 50%;
-    margin: 20px auto;
-    padding: 10px;
+#button-landing1 {
+  /* width: 50%; */
+    /* margin: 20px auto; */
+    padding: 10px 20px;
     border-radius: 20px;
     font-size: 17px;
     font-weight: 500;
-    background: white;
+    background: transparent;
     cursor: pointer;
-    border: 1px solid black;
+    color: red;
+    border: 1px solid red;
     transition: all 0.3s ease; 
     margin-top: 40px;
     margin-bottom: 10px;
+    margin-right: 50px;
 }
-
-#contact-button:hover {
-  background: black;
+#button-landing2 {
+  /* width: 50%; */
+    /* margin: 20px auto; */
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    color: red;
+    border: 1px solid red;
+    transition: all 0.3s ease; 
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+.button-lan-button  {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+#button-landing1:hover {
+  background: linear-gradient(to top, #ff0000 0%, #800000 100%);
+  color: white;
+  border: 1px solid white;
+}
+#button-landing2:hover {
+  background: linear-gradient(to top, #ff0000 0%, #800000 100%);
   color: white;
   border: 1px solid white;
 }
@@ -129,6 +165,10 @@ body {
   margin-bottom: 30px;
   text-align: center;
   margin-bottom: 30px;
+  background: linear-gradient(260deg, rgba(255, 0, 0, 1) 20%, rgba(255, 0, 0, 0.3) 80%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
 }
 .services,
 .projects,
@@ -230,8 +270,13 @@ body {
   top: 0;
   height: 100%;
   /* background-color: indianred; */
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  background-image: linear-gradient(to left, #ff0000 0%, #ff4d4d 100%);
+/* background-image: linear-gradient(135deg, #ff1a1a 0%, #b20000 100%); */
+
+
+
 }
 .skill-percentage {
   position: absolute;
@@ -289,7 +334,7 @@ form textarea {
 }
 form input:focus,
 form textarea:focus {
-  border-color: #007bff;
+  border-color: red;
 }
 form input::placeholder,
 form textarea::placeholder {
