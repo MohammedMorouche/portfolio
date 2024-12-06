@@ -71,10 +71,10 @@ window.addEventListener('scroll', function() {
     event.preventDefault();
     scrollToSection("contact");
   });
-  document.getElementById("contact-button").addEventListener("click", function(event) {
-    event.preventDefault();
-    scrollToSection("contact");
-  });
+  // document.getElementById("contact-button").addEventListener("click", function(event) {
+  //   event.preventDefault();
+  //   scrollToSection("contact");
+  // });
 
   // Footer navigation
   document.getElementById("footer-services-link").addEventListener("click", function(event) {
@@ -110,4 +110,25 @@ let menuList = document.getElementById("menuList")
             }
         }
       
-  
+        const landing = document.getElementById("landing");
+
+        // Nombre de points
+        const totalPoints = 1000;
+    
+        for (let i = 0; i < totalPoints; i++) {
+          // Créer un point
+          const point = document.createElement("div");
+          point.classList.add("point");
+    console.log("test");
+          // Positionner aléatoirement le point
+          const x = Math.random() * window.innerWidth;
+          // const y = Math.random() * window.innerHeight;
+          // const y = Math.random() * document.documentElement.scrollHeight;
+          const y = Math.random() *  document.body.scrollHeight;
+    
+          point.style.left = `${x}px`;
+          point.style.top = `${y}px`;
+    
+          // Ajouter le point au conteneur
+          landing.appendChild(point);
+        }

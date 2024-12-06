@@ -65,7 +65,7 @@ body {
   /* background: linear-gradient(120deg, #0c042e, #1a064a); */
   /* background-image: linear-gradient(to right, #000000 0%, #1a1a1a 75%, #2e2e2e 100%); */
 }
-.landing>div {
+.landing .landing-text,.landing .lottie-landing {
   width: 50%;
 }
 .lottie-landing {
@@ -526,7 +526,13 @@ form button {
 .button:active {
   transform: scale(0.9);
 }
-
+.point {
+  position: absolute;
+  width: .5px; /* Taille du point */
+  height: .5px;
+  background-color: white;
+  border-radius: 50%; /* Rend les points circulaires */
+}
 
 @media (max-width: 768px) {
   .skills {
@@ -539,6 +545,12 @@ form button {
 .footer .page ul ,.footer .categories ul {
   font-size: 20px;
 }
+.skills-project li {
+  font-size: 13px !important;
+}
+
+
+
 .lottie-skills, .lottie-contact {
   display: none;
 }
@@ -599,6 +611,8 @@ form button {
   }
   .landing {
     height: calc(100vh - 200px);
+    position: relative;
+    overflow: hidden;
   }
   .lottie-landing {
     display: none;
