@@ -646,7 +646,7 @@ form button {
 @media (max-width:600px) {
   .header ul{
       position: absolute;
-      top: 70px;
+      top: 120px;
       max-height: 0;
       left: 0;
       right: 0;
@@ -654,7 +654,7 @@ form button {
       flex-direction: column;
       padding-right: 0;
       text-align: center;
-      background: #004274;
+      background: linear-gradient(260deg, rgba(255, 0, 0, 1) 20%, rgba(255, 0, 0, 0.3) 80%);
       gap: 0;
       z-index: 2;
       overflow: hidden;

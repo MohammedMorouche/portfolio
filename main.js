@@ -110,8 +110,8 @@ let menuList = document.getElementById("menuList")
             }
         }
       
-        const landing = document.getElementById("landing");
-
+        // const landing = document.getElementById("landing");
+        const body = document.body;
         // Nombre de points
         const totalPoints = 1000;
     
@@ -119,16 +119,16 @@ let menuList = document.getElementById("menuList")
           // Créer un point
           const point = document.createElement("div");
           point.classList.add("point");
-    console.log("test");
           // Positionner aléatoirement le point
           const x = Math.random() * window.innerWidth;
           // const y = Math.random() * window.innerHeight;
-          // const y = Math.random() * document.documentElement.scrollHeight;
-          const y = Math.random() *  document.body.scrollHeight;
+          const y = Math.random() * document.documentElement.scrollHeight;
+          // const y = Math.random() *  document.body.scrollHeight;
     
           point.style.left = `${x}px`;
           point.style.top = `${y}px`;
     
           // Ajouter le point au conteneur
-          landing.appendChild(point);
+          // landing.appendChild(point);
+          body.appendChild(point);
         }
